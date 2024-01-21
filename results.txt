@@ -1,0 +1,101 @@
+Adrian Tang
+amtang@bu.edu
+
+puzzles with 5-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			   10		  5.8		  274.5
+BFS			   10		  5.0		  47.1
+DFS (depth limit 20)	   10		  16.2		  38145.4
+DFS (depth limit 50)	   10		  48.2	   	  98086.0
+Greedy Search (using h1)    10		  5.0		  13.0
+A* (using h1)		   10		  5.0		  13.4
+
+
+
+puzzles with 10-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			   10		  10.0		  2137.9
+BFS			   10		  10.0		  747.4
+DFS (depth limit 20)	   10		  18.8		  49716.0
+DFS (depth limit 50)	   10		  49.2	   	  184574.6
+Greedy Search (using h1)    10		  5.0		  13.0
+A* (using h1)		   10		  29		  2666.0
+
+
+
+puzzles with 15-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			   10		  18.8		  33227.2
+BFS			   10		  15.0		  12672.0
+DFS (depth limit 20)	   10		  17.8		  137318.0
+DFS (depth limit 50)	   10		  48.6	   	  222812.0
+Greedy Search (using h1)    10		  20.4		  1231.3
+A* (using h1)		   10		  15.0		  891.0
+
+
+
+heuristic h2
+------------
+This heuristic function calculates the distance between tiles and their goal tiles using the pythagorean theorem. Using the given goal state tiles, the function uses the pythagorean theorem to calculate the distance and solves for the closest or furtherest distance depending on the algorithm
+
+
+
+puzzles with 18-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	  10		30.0		24943.3
+Greedy (heuristic h2)	  10		39.6		872.4
+# Greedy with any other heuristics
+
+A* (heuristic h1)	  10		18.0		4391.4
+A* (heuristic h2)	  10		18.0		819.4
+# Greedy with any other heuristics
+
+
+
+puzzles with 21-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	  10		48.5		3910.5
+Greedy (heuristic h2)	  10		43.4		3576.8
+# Greedy with any other heuristics
+
+A* (heuristic h1)	  10		21.0		19070.6
+A* (heuristic h2)	  10		21.0		2213.8
+# Greedy with any other heuristics
+
+
+
+puzzles with 24-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	  
+Greedy (heuristic h2)	  10		45.2		4087.6
+# Greedy with any other heuristics
+
+A* (heuristic h1)	  		
+A* (heuristic h2)	  10		24.0		7902.6
+# Greedy with any other heuristics
+
+
+
+puzzles with 27-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	  
+Greedy (heuristic h2)	  10		60.8		6549.8
+# Greedy with any other heuristics
+
+A* (heuristic h1)	  	
+A* (heuristic h2)	  10		27.0		37786.6
+# Greedy with any other heuristics
